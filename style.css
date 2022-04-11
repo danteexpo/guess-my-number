@@ -1,0 +1,189 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap");
+.disabled {
+  cursor: not-allowed;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Press Start 2P", sans-serif;
+  color: #eee;
+  background-color: #222;
+  transition: all 500ms ease-in-out;
+}
+
+.guessed {
+  background-color: #60b347;
+}
+
+header {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 7px solid #eee;
+}
+header h1 {
+  font-size: 2.75rem;
+  text-align: center;
+  margin: 2rem 0;
+}
+header .between {
+  font-size: 1.375rem;
+  margin-bottom: 2rem;
+}
+header .again {
+  width: 10ch;
+  text-align: center;
+  margin-bottom: 8rem;
+}
+header .number {
+  background: #eee;
+  color: #333;
+  font-size: 4rem;
+  width: 15rem;
+  padding: 3rem 0rem;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+}
+
+main {
+  margin-top: 8rem;
+  color: #eee;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  font-size: 1.5rem;
+  margin-top: 4rem;
+}
+
+.guess {
+  background: none;
+  border: 4px solid #eee;
+  font-family: inherit;
+  color: inherit;
+  font-size: 4rem;
+  padding: 2.5rem;
+  width: 20rem;
+  text-align: center;
+  display: block;
+  margin-bottom: 4rem;
+}
+
+.btn {
+  border: none;
+  background-color: #eee;
+  color: #222;
+  font-size: 2rem;
+  font-family: inherit;
+  padding: 2rem 3rem;
+  cursor: pointer;
+}
+
+.disabled {
+  cursor: not-allowed;
+}
+
+.btn:hover {
+  background-color: #ccc;
+}
+
+.label-score {
+  margin-top: 1.5rem;
+}
+
+.label-score::before {
+  content: "💯 ";
+}
+
+.label-highscore {
+  margin-bottom: 3rem;
+}
+
+.label-highscore::before {
+  content: "🥇 ";
+}
+
+@media (min-width: 500px) {
+  .right {
+    font-size: 1.875rem;
+  }
+}
+@media (min-width: 700px) {
+  header h1 {
+    margin-top: 3rem;
+  }
+
+  main {
+    flex-direction: row;
+  }
+
+  .guess {
+    width: 25rem;
+    font-size: 4.5rem;
+  }
+}
+@media (min-width: 1100px) {
+  header h1 {
+    font-size: 3.5rem;
+    margin-top: 4rem;
+  }
+  header .between {
+    font-size: 2rem;
+  }
+  header .number {
+    font-size: 6rem;
+  }
+
+  .right {
+    font-size: 2rem;
+  }
+}
+@media (min-width: 1300px) {
+  header h1 {
+    font-size: 4.5rem;
+  }
+  header .between {
+    font-size: 2.5rem;
+  }
+
+  .guess {
+    width: 30rem;
+    font-size: 5rem;
+  }
+
+  .right {
+    font-size: 2.625rem;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
